@@ -2,25 +2,49 @@
 <!doctype html>
 <html>
 <head>
-<title>Harry Fu</title>
-<link href="style.css" rel="stylesheet"  type="text/css" />
-
-
-<meta charset="utf-8">
+	<title>Harry Fu</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
-<body> 
-<header> 
-  <h1> 
-         <span class="orange"> Harry(Haoyuan) Fu</span>
-  </h1>
-</header>
+<body>
+
+<div class="background">
+
+<div class="nav">
+        <a class="a active" href="#">HOME</a>
+        <a class="b" href="https://github.com/HaoyuanFu">GITHUB</a>
+        <a class="c" href='#'>ABOUT ME</a>
+        <a class="d" href="https://www.linkedin.com/in/haoyuan-fu-a195b717a/">LINKEDIN</a>
+
+</div>
+
+<div class="content">
+	<div class="home">
+		<h1> Harry Fu</h1>
+		<h3> A Software Developer</h3>
+	</div>
+
+</div>
+
+<div class="aboutme">
+	<div class="me">
+		
+
+</div>
 
 
-<nav>
-      <ul>
-        <li><a href="">Resume</a></li>
-        <li><a href="https://github.com/HaoyuanFu">Github </a></li>
-        <li><a href="fuh6@mcmaster.ca">Email</a></li>
-        <li><a href="https://www.linkedin.com/in/haoyuan-fu-a195b717a/">Linkedin</a></li>
-      </ul>
-</nav> 
+<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript">
+
+	$(document).ready(function(){
+		$('a').click(function(){
+			//alert("i am click");
+			var selected = $(this);
+			$('a').removeCLass('active');
+			$(selected).addClass('active');
+		});
+	});
+			
+
+</script>
+</body>
+</html>
