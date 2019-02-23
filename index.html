@@ -11,8 +11,8 @@
 
 <div class="nav">
         <a class="a active" href="#">HOME</a>
-        <a class="b" href="https://github.com/HaoyuanFu">GITHUB</a>
-        <a class="c" href='#'>ABOUT ME</a>
+        <a class="b" href="#">ABOUT ME</a>
+        <a class="c" href='https://github.com/HaoyuanFu'>GITHUB</a>
         <a class="d" href="https://www.linkedin.com/in/haoyuan-fu-a195b717a/">LINKEDIN</a>
 
 </div>
@@ -22,25 +22,46 @@
 		<h1> Harry Fu</h1>
 		<h3> A Software Developer</h3>
 	</div>
-
-</div>
-
-<div class="aboutme">
-	<div class="me">
+	<div class="aboutMe">
+			<p><b>Hello everyone,</b><br></p>
+			<p>It's so nice to meet you guys! My name is Harry Fu and I'm a third year software engineering student at McMaster University.<br></p>
+			<p>Here is my <b>highlights of qualification:</b><br></p>
+			<p><li>4-year experience with Java programming through personal project and school projects</li>
+			<li>Hands-on experience with <b>Python, SQL, AngularJS, JavaScript, HTML5, CSS3, C/C++, Verilog, GO, Unix/Linux and Windows Operating systems.</b></li>
+			<li>Knowledgeable with <b>Eclipse, SQL developer, Git, SVN, Node.js and LabView development tools and software testing, software requirements and security and architecture design</b> through related courses</li>
+			<li>Quick to learn and adapt, creative, good communication skills and excellent group work skills</li></p>
+	</div>
 		
+</div>
 
 </div>
 
 
-<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
 <script type="text/javascript">
 
 	$(document).ready(function(){
-		$('a').click(function(){
+		$("nav").click(function(){
 			//alert("i am click");
 			var selected = $(this);
-			$('a').removeCLass('active');
+			$("nav").removeCLass('active');
 			$(selected).addClass('active');
+		});
+
+		var $a = $(".a"),
+		$b = $(".b"),
+		$c = $(".c"),
+		$d = $(".d"),
+		$home = $(".home"),
+		$aboutMe = $(".aboutMe")
+
+		$a.click(function(){
+			$(".home").fadeIn();
+			$aboutMe.fadeOut();
+		});
+		$b.click(function(){
+			$aboutMe.fadeIn();
+			$home.fadeOut();
 		});
 	});
 			
