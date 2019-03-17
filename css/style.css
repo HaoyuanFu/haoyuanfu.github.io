@@ -9,19 +9,20 @@ html, body{
 	font-weight: normal;
 }
  #main{
-width:1910px;
-height:975px;
-MARGIN-RIGHT: auto;
-MARGIN-LEFT: auto;
+	width:1910px;
+	height:975px;
+	MARGIN-RIGHT: auto;
+	MARGIN-LEFT: auto;
     }
 .background{
-	width: 100%;
-	height: 100%;
+	width: 1910px;
+	height: 975px;
 	background-image: url(../images/harry1.jpeg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	position: relative;
-	overflow-y: auto;
+	overflow-y: auto; 
+	
 }
 .nav{
 	width: 350px;
